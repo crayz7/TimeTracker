@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+  <script src="logic.js"></script>
+
+</head>
+<body>
+
+	<div id="currentEEs"></div>
+
+	<!-- Add Employee -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Employee Name</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Employee Name</label>
+                <input class="form-control" id="name" type="text">
+              </div>
+              <div class="form-group">
+                <label for="role">Role</label>
+                <input class="form-control" id="role" type="text">
+              </div>
+              <div class="form-group">
+                <label for="start-date">Start Date (DD/MM/YY -ex: 01/01/89)</label>
+                <input class="form-control" id="start-date" type="text">
+              </div>
+              <div class="form-group">
+                <label for="monthly-rate">Monthly Rate</label>
+                <input class="form-control" id="monthly-rate" type="number">
+              </div>
+              <button class="btn btn-primary" id="submit-name" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
